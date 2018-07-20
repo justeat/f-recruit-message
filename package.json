@@ -1,7 +1,7 @@
 {
   "name": "@justeat/f-recruit-message",
   "description": "",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "dist/index.js",
   "homepage": "https://github.com/justeat/f-recruit-message",
   "contributors": [
@@ -19,26 +19,12 @@
     "node": ">=4.0.0"
   },
   "devDependencies": {
-    "@justeat/gulp-build-fozzie": "^6.5.0",
     "babel-cli": "^6.26.0",
-    "babel-preset-es2015": "^6.24.1",
-    "concurrently": "^3.5.1",
-    "coveralls": "^3.0.0",
-    "gulp": "^3.9.1",
-    "js-test-buddy": "^0.0.7"
+    "babel-preset-es2015": "^6.24.1"
   },
   "keywords": [
-    "fozzie",
-    "eyeglass-module"
+    "fozzie"
   ],
-  "scripts": {
-    "prepare": "concurrently -n \"lint,compile,test\" -c \"blue,yellow,green\" --kill-others-on-fail \"yarn lint\" \"yarn compile\" \"yarn run test\"",
-    "lint": "gulp scripts:lint",
-    "compile": "babel -d dist src",
-    "test": "gulp scripts:test:coverage",
-    "test:watch": "jest --coverage --watch",
-    "test:coveralls": "cat coverage/lcov.info | coveralls"
-  },
   "browserslist": [
     "> 5%",
     "last 2 versions",
