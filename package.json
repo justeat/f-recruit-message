@@ -1,18 +1,18 @@
 {
-  "name": "@justeat/{package-name}",
+  "name": "@justeat/f-recruit-message",
   "description": "",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/index.js",
-  "homepage": "https://github.com/justeat/{package-name}",
+  "homepage": "https://github.com/justeat/f-recruit-message",
   "contributors": [
-    "Github contributors <https://github.com/justeat/{package-name}/graphs/contributors>"
+    "Github contributors <https://github.com/justeat/f-recruit-message/graphs/contributors>"
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:justeat/{package-name}.git"
+    "url": "git@github.com:justeat/f-recruit-message.git"
   },
   "bugs": {
-    "url": "https://github.com/justeat/{package-name}/issues"
+    "url": "https://github.com/justeat/f-recruit-message/issues"
   },
   "license": "Apache-2.0",
   "engines": {
@@ -31,12 +31,6 @@
     "fozzie",
     "eyeglass-module"
   ],
-  "eyeglass": {
-    "name": "{package-name}",
-    "sassDir": "src/scss",
-    "needs": "^1.1.2",
-    "exports": false
-  },
   "scripts": {
     "prepare": "concurrently -n \"lint,compile,test\" -c \"blue,yellow,green\" --kill-others-on-fail \"yarn lint\" \"yarn compile\" \"yarn run test\"",
     "lint": "gulp scripts:lint",
@@ -44,9 +38,6 @@
     "test": "gulp scripts:test:coverage",
     "test:watch": "jest --coverage --watch",
     "test:coveralls": "cat coverage/lcov.info | coveralls"
-  },
-  "stylelint": {
-    "extends": "@justeat/stylelint-config-fozzie"
   },
   "browserslist": [
     "> 5%",
