@@ -3,6 +3,15 @@
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+v0.0.4
+------------------------------
+*July 25, 2018*
+
+### Changed
+- remove unnecessary single quote
+- add rays img
+
+
 v0.0.3
 ------------------------------
 *July 20, 2018*
